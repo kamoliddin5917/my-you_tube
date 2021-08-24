@@ -1,0 +1,150 @@
+@import "../../sass/colors.scss";
+
+.home {
+  display: flex;
+
+  &__main {
+    width: 82%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 110px;
+    padding-left: 1.2%;
+
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #888;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: gold;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 215, 0, .5);
+    }
+
+    &-card {
+      margin-bottom: 49px;
+
+      &-top {
+        width: 73vw;
+        margin-bottom: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-user {
+          text-decoration: none;
+          color: inherit;
+
+          display: flex;
+          align-items: center;
+
+          .user {
+            &__img {
+              display: inline-block;
+              width: 50px;
+              height: 50px;
+              margin-right: 20px;
+            }
+
+            &__name {
+              font-weight: bold;
+              font-size: 26px;
+              line-height: 33px;
+            }
+
+            &__channel {
+              font-weight: normal;
+              font-size: 16px;
+              line-height: 20px;
+              opacity: .4;
+              margin-left: 19px;
+            }
+          }
+
+        }
+
+        &-btn {
+          display: inline-block;
+          background-color: $color-red;
+          color: inherit;
+          padding: 10px 20px;
+          margin-left: auto;
+          margin-right: 40px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          border-radius: 20px;
+          border: 1px solid transparent;
+          outline: none;
+          cursor: pointer;
+          transition: .3s;
+
+          &:hover {
+            background-color: transparent;
+            color: $color-red;
+            border: 1px solid $color-red;
+          }
+        }
+
+        .slider__btns {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          width: 70px;
+
+          .slider__btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .1);
+            mix-blend-mode: normal;
+            // opacity: 0.1;
+
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &.next {
+              transform: rotate(180deg);
+            }
+
+          }
+
+        }
+      }
+
+      .videos-ul {
+        list-style: none;
+
+        display: flex;
+        justify-content: space-between;
+
+        &--two .video__list {
+          width: 540px;
+        }
+
+        &--two .video__list .video__img {
+          width: 540px;
+          height: 250px;
+        }
+      }
+    }
+  }
+}

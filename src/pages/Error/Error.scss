@@ -1,0 +1,11 @@
+.error {
+  display: flex;
+
+  &__main {
+    color: gold;
+    padding-top: 110px;
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../sass/colors.scss";
+
+.video {
+  &__list {
+    width: 250px;
+    margin-right: 40px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 14px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 4px;
+    height: 40px;
+    overflow-y: hidden;
+    padding-right: 10px;
+  }
+
+  &__information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    opacity: .4;
+
+    &-data {
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+}
