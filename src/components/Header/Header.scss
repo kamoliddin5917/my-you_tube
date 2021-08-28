@@ -14,6 +14,10 @@
   left: 0;
   width: 100%;
 
+  @media only screen and(max-width:900px) {
+    padding: 10px;
+  }
+
   &__left {
     width: 60%;
     display: flex;
@@ -43,6 +47,11 @@
       width: 100px;
       height: 25px;
 
+      @media only screen and(max-width:900px) {
+        width: 70px;
+        height: 20px;
+      }
+
       &__img {
         display: inline-block;
         width: 100%;
@@ -53,7 +62,6 @@
     &-search {
       display: inline-block;
       width: 70%;
-      // background: ;
       mix-blend-mode: normal;
       border-radius: 22px;
       border: none;
@@ -70,11 +78,21 @@
       line-height: 20px;
       color: rgba(255, 255, 255, .4);
 
+      @media only screen and(max-width:900px) {
+        padding: 5px 10px;
+        background-size: 15px 15px, cover;
+        font-size: 14px;
+      }
+
       &::placeholder {
         font-weight: normal;
         font-size: 16px;
         line-height: 20px;
         color: rgba(255, 255, 255, .4);
+
+        @media only screen and(max-width:900px) {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -87,6 +105,13 @@
 
     &-img {
       cursor: pointer;
+
+      @media only screen and(max-width:900px) {
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
     }
 
     &-profile-img {
@@ -94,6 +119,11 @@
       width: 40px;
       height: 40px;
       cursor: pointer;
+
+      @media only screen and(max-width:900px) {
+        width: 28px;
+        height: 28px;
+      }
     }
   }
 }

@@ -4,6 +4,11 @@
   &__list {
     width: 250px;
     margin-right: 40px;
+
+    @media only screen and(max-width:900px) {
+      width: 150px;
+      margin-right: 20px;
+    }
   }
 
   &__link {
@@ -19,6 +24,11 @@
     object-fit: cover;
     margin-bottom: 10px;
     border-radius: 14px;
+
+    @media only screen and(max-width:900px) {
+      width: 150px;
+      height: 80px;
+    }
   }
 
   &__title {
@@ -29,6 +39,10 @@
     height: 40px;
     overflow-y: hidden;
     padding-right: 10px;
+
+    @media only screen and(max-width:900px) {
+      font-size: 12px;
+    }
   }
 
   &__information {
@@ -38,10 +52,15 @@
 
     opacity: .4;
 
-    &-data {
+    &-data,
+    &-username {
       font-weight: normal;
       font-size: 13px;
       line-height: 16px;
+
+      @media only screen and(max-width:900px) {
+        font-size: 10px;
+      }
     }
   }
 

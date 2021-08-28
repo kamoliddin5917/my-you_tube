@@ -13,7 +13,11 @@
     padding-right: 32px;
     padding-bottom: 40px;
 
-
+    @media only screen and(max-width:900px) {
+      width: 96%;
+      padding-top: 55px;
+      padding-right: 10px;
+    }
 
     /* width */
     &::-webkit-scrollbar {
@@ -43,6 +47,11 @@
         width: 100%;
         height: 280px;
         margin-bottom: 30px;
+
+        @media only screen and(max-width:900px) {
+          height: 150px;
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -56,6 +65,10 @@
 
         margin-bottom: 20px;
 
+        @media only screen and(max-width:900px) {
+          margin-bottom: 15px;
+        }
+
         .channel {
           &__user {
             display: flex;
@@ -65,6 +78,11 @@
               display: inline-block;
               width: 80px;
               height: 80px;
+
+              @media only screen and(max-width:900px) {
+                width: 40px;
+                height: 40px;
+              }
             }
 
             &-text {
@@ -75,6 +93,11 @@
               font-weight: bold;
               font-size: 26px;
               line-height: 33px;
+
+              @media only screen and(max-width:900px) {
+                font-size: 20px;
+                line-height: 20px;
+              }
             }
 
             &-subscribed {
@@ -82,6 +105,10 @@
               font-size: 13px;
               line-height: 16px;
               opacity: .4;
+
+              @media only screen and(max-width:900px) {
+                font-size: 10px;
+              }
             }
           }
 
@@ -97,6 +124,12 @@
             color: inherit;
             cursor: pointer;
             transition: all .3s;
+
+            @media only screen and(max-width:900px) {
+              padding: 5px 10px;
+              font-size: 12px;
+              line-height: 10px;
+            }
 
             &:hover {
               background-color: transparent;
@@ -119,6 +152,10 @@
 
             margin-bottom: 59px;
 
+            @media only screen and(max-width:900px) {
+              margin-bottom: 20px;
+            }
+
             &__list {
               font-weight: normal;
               font-size: 18px;
@@ -128,6 +165,12 @@
               padding: 3px;
               border-bottom: 2px solid transparent;
               transition: all .3s;
+
+              @media only screen and(max-width:900px) {
+                font-size: 15px;
+                margin-right: 20px;
+                padding: 2px;
+              }
 
               &:hover {
                 color: $color-red;
@@ -154,6 +197,11 @@
               width: 300px;
               height: 200px;
               border-radius: 14px;
+
+              @media only screen and(max-width:900px) {
+                width: 200px;
+                height: 100px;
+              }
             }
 
             &__text {
@@ -167,6 +215,12 @@
                 font-size: 26px;
                 line-height: 34px;
                 margin-bottom: 10px;
+
+                @media only screen and(max-width:900px) {
+                  font-size: 16px;
+                  line-height: 20px;
+                  margin-bottom: 4px;
+                }
               }
 
               &-content {
@@ -176,6 +230,12 @@
                 line-height: 22px;
                 opacity: .6;
                 margin-bottom: 20px;
+
+                @media only screen and(max-width:900px) {
+                  font-size: 10px;
+                  line-height: 10px;
+                  margin-bottom: 3px;
+                }
               }
 
               &-data {
@@ -184,6 +244,11 @@
                 font-size: 16px;
                 line-height: 22px;
                 opacity: .6;
+
+                @media only screen and(max-width:900px) {
+                  font-size: 10px;
+                  line-height: 10px;
+                }
               }
             }
           }
